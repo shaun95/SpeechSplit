@@ -105,8 +105,7 @@ class MyCollator(object):
             aa, b, c = token
             len_crop = np.random.randint(self.min_len_seq, self.max_len_seq+1, size=2) # 1.5s ~ 3s
             left = np.random.randint(0, len(aa)-len_crop[0], size=2)
-            pdb.set_trace()
-            
+                        
             a = aa[left[0]:left[0]+len_crop[0], :]
             c = c[left[0]:left[0]+len_crop[0]]
             
